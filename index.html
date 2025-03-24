@@ -3,109 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snahil Indoria - Resume</title>
+    <meta name="description" content="Snahil Indoria - Senior Site Reliability Engineer & DevOps Specialist">
+    <title>Snahil Indoria - Senior SRE & DevOps Specialist</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="theme-color" content="#2c3e50">
 </head>
 <body>
-    <header>
-        <div class="overlay">
-            <h1>Snahil Indoria</h1>
-            <p>DevOps Engineer</p>
-            <p>
-                <a href="mailto:indoria.snahil@gmail.com"><i class="fas fa-envelope"></i> indoria.snahil@gmail.com</a> | 
-                <i class="fas fa-phone"></i> +91-9672002488
-            </p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/snahilindoria/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/snahilindoria" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://medium.com/@snahilindoria" target="_blank"><i class="fab fa-medium"></i></a>
-                <a href="https://www.youtube.com/channel/UCID4oHTaL8v6qEYw5xX1iSg" target="_blank"><i class="fab fa-youtube"></i></a>
+    <header class="header">
+        <div class="container overlay">
+            <div class="profile-info">
+                <h1>SNAHIL INDORIA</h1>
+                <div class="title-bar">
+                    <p class="title">Senior Site Reliability Engineer | DevOps Specialist</p>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:indoria.snahil@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> 
+                        <span>indoria.snahil@gmail.com</span>
+                    </a>
+                    <a href="tel:+919672002488" class="contact-link">
+                        <i class="fas fa-phone"></i>
+                        <span>+91-9672002488</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/snahilindoria/" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="technical-expertise">
-        <h2>Technical Expertise</h2>
+    <main class="container">
+        <section id="technical-expertise" class="section">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Cloud & Infrastructure</h3>
+                    <div class="skills">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Ansible</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>DevOps & Security</h3>
+                    <div class="skills">
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">SonarQube</span>
+                        <span class="skill-tag">Istio</span>
+                        <span class="skill-tag">CloudBuild</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Monitoring & Data</h3>
+                    <div class="skills">
+                        <span class="skill-tag">EFK-Stack</span>
+                        <span class="skill-tag">Zabbix</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Kafka</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Systems & Tools</h3>
         <div class="skills">
-            <span>AWS</span><span>GCP</span><span>Jenkins</span><span>GOCD</span><span>Cloud Build</span><span>Docker</span>
-            <span>Docker-compose</span><span>Kubernetes</span><span>Nginx</span><span>MongoDB</span><span>Ansible</span><span>Terraform</span>
-            <span>Zabbix</span><span>EFK-Stack</span><span>Python</span><span>CentOS/RHEL</span><span>Ubuntu</span><span>Windows</span>
-            <span>Git</span><span>Bitbucket</span><span>Istio</span><span>CloudWatch</span><span>GitHubActions</span><span>JFrog</span>
-            <span>Redis</span><span>Kafka/Zookeeper</span><span>Service-Versioning</span><span>YAML</span><span>Load-Balancer</span><span>System-hardening</span>
+                        <span class="skill-tag">RHEL</span>
+                        <span class="skill-tag">Ubuntu</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
         </div>
     </section>
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
+        <section id="experience" class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <!-- Qoala Experience -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <div class="job">
+                            <div class="job-header">
+                                <h3>Senior DevOps Engineer</h3>
+                                <span class="company">Qoala</span>
+                                <span class="duration">Sep 2024 - Present</span>
+                                <span class="location">Gurugram, India</span>
+                            </div>
+                            <ul class="achievements">
+                                <li>Implementing and managing DevSecOps practices to integrate security within CI/CD pipelines</li>
+                                <li>24*7 on-call support for security incidents and working on L2 tickets for security-related issues</li>
+                                <li>Managing WAF, load balancers, and API gateways to secure application traffic and prevent threats</li>
+                                <li>Cloud security management, including IAM policies, security groups, and compliance audits</li>
+                                <li>Regular vulnerability assessments, penetration testing, and remediation planning</li>
+                                <li>Monitoring logs and security events using tools like CloudWatch, Splunk, and GuardDuty</li>
+                                <li>Auditing infrastructure to optimize security posture and reduce compliance risks</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <h4>Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span>DevSecOps</span>
+                                    <span>Trivy</span>
+                                    <span>SecurityHub</span>
+                                    <span>GuardDuty</span>
+                                    <span>Cloudflare</span>
+                                    <span>Amazon EKS</span>
+                                    <span>ECS</span>
+                                    <span>AWS</span>
+                                    <span>WAF</span>
+                                    <span>CloudWatch</span>
+                                    <span>Splunk</span>
+                                    <span>IAM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TechMojo Lead Role -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <div class="job">
+                            <div class="job-header">
+                                <h3>Lead Member of Technical Staff</h3>
+                                <span class="company">TechMojo Solutions</span>
+                                <span class="duration">Aug 2023 - Aug 2024</span>
+                                <span class="location">Hyderabad, India</span>
+                            </div>
+                            <ul class="achievements">
+                                <li>Management of Gaming Platforms: Successfully managed over 20 client gaming platforms, handling a massive daily traffic of over a billion spins</li>
+                                <li>Full Automation: Implemented a fully functional automated system for enhanced efficiency and reliability</li>
+                                <li>Key Role in Migration: Played a pivotal role in migrating all client systems from on-premises infrastructure to cloud-based solutions</li>
+                                <li>Architecture Transformation: Led the transition from a monolithic architecture to a micro-services model, ensuring seamless live migration</li>
+                                <li>Team Leadership: Effectively managed a DevOps team comprising 15 members, overseeing their work and fostering a collaborative environment</li>
+                                <li>Continuous Improvement: Constantly sought and implemented innovative solutions to improve system performance and reliability</li>
+                                <li>Client Relations and Communication: Maintained strong communication channels with clients, ensuring their needs were met and expectations exceeded</li>
+                                <li>Technical Expertise: Demonstrated deep technical knowledge in both on-premises and cloud technologies, as well as in various DevOps practices</li>
+                                <li>Problem-Solving Skills: Excelled in identifying and resolving complex technical issues, ensuring minimal disruption to services</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <h4>Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span>Grafana</span>
+                                    <span>Jenkins</span>
+                                    <span>Amazon EKS</span>
+                                    <span>Ansible</span>
+                                    <span>Istio</span>
+                                    <span>Apache Kafka</span>
+                                    <span>Prometheus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2021-2023 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <div class="job">
+                            <div class="job-header">
+                                <h3>Senior Member of Technical Staff</h3>
+                                <span class="company">TechMojo Solutions</span>
+                                <span class="duration">Aug 2021 - Aug 2023</span>
+                                <span class="location">Hyderabad, India</span>
+                            </div>
+                            <ul class="achievements">
+                                <li>Migrated from Monolithic to Containerized Architecture: Successfully containerized all Java services</li>
+                                <li>Automated CI/CD Pipelines: Developed comprehensive automation for continuous integration and delivery</li>
+                                <li>Integrated Monitoring and Alerting: Implemented robust monitoring using Grafana and Prometheus</li>
+                                <li>Zero Downtime Live Migration: Achieved seamless live migration to Kubernetes</li>
+                                <li>Managed Release Cycles: Efficiently handled weekly and monthly release cycles for 10+ operators</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <h4>Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span>Grafana</span>
+                                    <span>HashiCorp Vault</span>
+                                    <span>CI/CD</span>
+                                    <span>Linux</span>
+                                    <span>Amazon EKS</span>
+                                    <span>Terraform</span>
+                                    <span>VPN</span>
+                                    <span>Apache Kafka</span>
+                                    <span>Prometheus</span>
+                                    <span>Zabbix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2019-2021 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content">
+                        <div class="job">
+                            <div class="job-header">
+                                <h3>Associate DevOps Engineer</h3>
+                                <span class="company">Techolution</span>
+                                <span class="duration">Dec 2019 - Aug 2021</span>
+                                <span class="location">Hyderabad, India</span>
+                            </div>
+                            <ul class="achievements">
+                                <li>Implemented threat detection and server hardening with bastion hosts and port restrictions</li>
+                                <li>Set up hybrid infrastructure for production environments</li>
+                                <li>Automated MongoDB server backup via scripts and cron schedule</li>
+                                <li>Deployed Mainflux IoT platform with container monitoring</li>
+                                <li>Implemented GCP cloud build with Helm deployments</li>
+                                <li>Managed logs using GCP monitoring service</li>
+                                <li>Configured VPC tunneling and SSL wildcard certificates</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <h4>Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span>GCP</span>
+                                    <span>Docker</span>
+                                    <span>Kubernetes</span>
+                                    <span>Jenkins</span>
+                                    <span>MongoDB</span>
+                                    <span>Cloud Build</span>
+                                    <span>Helm</span>
+                                    <span>Nginx</span>
+                                    <span>Kafka</span>
+                                    <span>Zookeeper</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps Intern -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
         <div class="job">
-            <h3>Pragmatic Solutions</h3>
-            <ul>
-                <li>Managed over 20 client gaming platforms with daily traffic of over a billion spins.</li>
-                <li>Implemented a fully functional automated system for enhanced efficiency and reliability.</li>
-                <li>Played a pivotal role in migrating systems from on-premises to cloud-based solutions.</li>
-                <li>Led the transition from a monolithic architecture to a micro-services model.</li>
-                <li>Managed a a large team including handling day to day activities</li>
-                <li>Constantly sought and implemented innovative solutions to improve system performance and reliability.</li>
+                            <div class="job-header">
+                                <h3>DevOps Intern</h3>
+                                <span class="company">Linux World, Jaipur</span>
+                                <span class="duration">Dec 2018 - Jan 2019</span>
+                                <span class="location">Jaipur, India</span>
+                            </div>
+                            <ul class="achievements">
+                                <li>Worked on Python web applications and CGI programming</li>
+                                <li>Implemented containerization solutions</li>
+                                <li>Gained experience in automation and provisioning</li>
+                                <li>Worked on server security and hardening</li>
             </ul>
+                            <div class="tech-stack">
+                                <h4>Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span>Python</span>
+                                    <span>Docker</span>
+                                    <span>Kubernetes</span>
+                                    <span>OpenShift</span>
+                                    <span>Ansible</span>
+                                    <span>RHEL</span>
+                                    <span>AWS</span>
+                                    <span>OpenStack</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
-        <div class="job">
-            <h3>Mauritius Telecom</h3>
-            <ul>
-                <li>Ensured threat detection and server hardening to avoid miscellaneous attacks.</li>
-                <li>24*7 On call support for production issue and working on L2 tickets for end-users using service-now.</li>
-                <li>Managed multiple load-balancer for application with traffic access through fortiweb(WFA) and kong-gateway.</li>
-                <li>Deployed Mainflux open-source IoT platform on Docker-compose with detailed container monitoring.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Sonic Drive-Inm</h3>
-            <ul>
-                <li>Managing ci|cd tools like go-cd for smooth deployment of application in all environments.</li>
-                <li>Worked on hybrid infrastructure setup for production environments.</li>
-                <li>Troubleshot support for production issues, complete CI/CD with Jenkins.</li>
-                <li>On-Prem database management with regular ami refresh with latest security patch and updates</li>
-                <li>Auditing of infrastructure to reduce platform running cost</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Brooklyn Hospital</h3>
-            <ul>
-                <li>Setup and configure complete infra on gke with ci|cd automation using cloud build with helm deployment files with slack
-notification integration.</li>
-                <li>Experience with build tools like maven, gradle.</li>
-                <li>Logs management using gcp monitoring service and capturing error logs of pods for underlying services and creating policies
-for logs size management.</li>
-                <li>Deployment of kakfa and zookpeeper for event based micro-service with logs generation limitation policies in gcp moni-
-toring</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Face-Open</h3>
-            <ul>
-                <li>Engaged in creating custom docker images for data-analytic application which reduced deployment time with development
-of ansible playbooks for servers configuration.</li>
-                <li>Server configuration of graph database orange-db with logs monitoring for services.</li>
-                <li>Complete migration from gke to cloud run to reduce cost of the infra to less then half.</li>
-                <li>Ingress mapping for the gke and deployment of jenkins Server for ci|cd, Integrated to git, build docker image of the code,
-push docker image to gcr and deploy containers to provisioned servers.</li>
-            </ul>
-        </div>
-        <!-- Add more job sections as needed -->
-        
     </section>
 
-    <section id="education">
-        <h2>Education Qualification</h2>
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                    <div class="edu-header">
+                        <h3>Master of Technology</h3>
+                        <span class="date">2023-2025</span>
+                    </div>
+                    <p class="institution">Birla Institute of Technology And Science, Pilani WIPL</p>
+                    <p class="specialization">Specialization in Cyber Security</p>
+                </div>
         <div class="education-item">
-            <h3>JK Lakshmipat University, Jaipur, India</h3>
-            <p>Bachelor of Technology in Computer Science (2015-2019)</p>
+                    <div class="edu-header">
+                        <h3>Bachelor of Technology in Computer Science</h3>
+                        <span class="date">2015-2019</span>
+                    </div>
+                    <p class="institution">JK Lakshmipat University, Jaipur, India</p>
+                </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Snahil Indoria</p>
+        <section id="certifications" class="section">
+            <h2 class="section-title">Global Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <h3>Google Professional Cloud Architect</h3>
+                    <p>Cert-ID: nRqbv7</p>
+                </div>
+                <div class="cert-item">
+                    <h3>Google Professional Cloud Network Engineer</h3>
+                    <p>Cert-ID: YsJyka</p>
+                </div>
+                <div class="cert-item">
+                    <h3>Google Associate Cloud Engineer</h3>
+                    <p>Cert-ID: FC0seA</p>
+                </div>
+                <div class="cert-item">
+                    <h3>Red Hat Certified System Administrator</h3>
+                    <p>Cert-ID: 180-272-221</p>
+                </div>
+                <div class="cert-item">
+                    <h3>Certified Information Security Expert</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Snahil Indoria | All Rights Reserved</p>
+        </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
